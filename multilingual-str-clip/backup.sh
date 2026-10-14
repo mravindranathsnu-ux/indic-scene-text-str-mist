@@ -1,0 +1,6 @@
+mkdir -p checkpoints/telugu_backup_unfreeze8_best
+cp checkpoints/telugu/best.pt checkpoints/telugu_backup_unfreeze8_best/
+cp checkpoints/telugu/training_summary.txt checkpoints/telugu_backup_unfreeze8_best/
+cp checkpoints/telugu/training_summary.json checkpoints/telugu_backup_unfreeze8_best/
+cp results/telugu_test_report.txt results/telugu_test_report_unfreeze8_best.txt
+cp results/telugu_test_predictions.csv results/telugu_test_predictions_unfreeze8_best.csv

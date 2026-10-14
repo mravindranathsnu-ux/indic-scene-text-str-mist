@@ -1,0 +1,53 @@
+# Safety net: this repo is meant to hold code only. These patterns guard
+# against accidentally committing data, checkpoints, logs, or secrets if
+# the project directories are ever synced into this repo wholesale.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Secrets
+*.key
+*_api_key*
+.env
+*.pem
+
+# Model weights / checkpoints
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+weights/
+work_dirs/
+
+# Data, results, logs, generated artifacts
+data/
+datasets/
+incoming/
+samples/
+results/
+logs/
+*.log
+*.zip
+fonts/
+font_check_samples/
+demo/
+bstd_eval_ready/
+bstd_wrong_review/
+recognition_crops/
+recognition_gt/
+recognition_gt_e2e/
+recognition_gt_e2e_v2/
+viz_predictions/
+paper_figure_images/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
